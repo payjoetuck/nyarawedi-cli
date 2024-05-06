@@ -27,11 +27,11 @@ if __name__ == '__main__':
     while True: #1
         main_menu = questionary.select(
             f"Welcome to Random Picker!\n{get_data()}",
-            choices=["Make new partisipants", "Edit partisipants", "ROLL RANDOM!", "Quit"],
+            choices=["Make new participants", "Edit participants", "ROLL RANDOM!", "Quit"],
         ).ask() #2
-        if main_menu == 'Make new partisipants': #3
+        if main_menu == 'Make new participants': #3
             add_data(questionary.text("Full name").ask()) #4
-        elif main_menu == 'Edit partisipants':
+        elif main_menu == 'Edit participants':
             choose_index = data.index(
                     questionary.select(
                     "Choose the participant!",
